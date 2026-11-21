@@ -6,12 +6,12 @@ import {
 import { useDisclosure } from '@mantine/hooks';
 
 const items = [
-  { title: 'ベースプレート', tag: 'パーツ', desc: '汎用の取り付けプレート。M3ネジ穴付き。', color: 'blue' },
-  { title: 'ケーブルクリップ', tag: '小物', desc: 'デスク裏の配線整理に便利なクリップ。', color: 'teal' },
-  { title: 'スマホスタンド', tag: 'ガジェット', desc: '角度調整できる折りたたみ式スタンド。', color: 'grape' },
-  { title: 'ミニ収納ボックス', tag: '収納', desc: '積み重ねできる小型ボックス。', color: 'orange' },
-  { title: 'ヘッドホンフック', tag: 'ガジェット', desc: '机の天板に挟んで使うフック。', color: 'grape' },
-  { title: 'ギアセット', tag: 'パーツ', desc: '工作用の歯車セット(6種)。', color: 'blue' },
+  { title: 'ベースプレート', en: 'Base Plate', tag: 'パーツ', desc: '汎用の取り付けプレート。M3ネジ穴付き。', color: 'blue' },
+  { title: 'ケーブルクリップ', en: 'Cable Clip', tag: '小物', desc: 'デスク裏の配線整理に便利なクリップ。', color: 'teal' },
+  { title: 'スマホスタンド', en: 'Phone Stand', tag: 'ガジェット', desc: '角度調整できる折りたたみ式スタンド。', color: 'grape' },
+  { title: 'ミニ収納ボックス', en: 'Mini Box', tag: '収納', desc: '積み重ねできる小型ボックス。', color: 'orange' },
+  { title: 'ヘッドホンフック', en: 'Headphone Hook', tag: 'ガジェット', desc: '机の天板に挟んで使うフック。', color: 'grape' },
+  { title: 'ギアセット', en: 'Gear Set', tag: 'パーツ', desc: '工作用の歯車セット(6種)。', color: 'blue' },
 ];
 
 function Content() {
@@ -62,7 +62,7 @@ function Content() {
                   <Card key={i.title} withBorder shadow="sm" radius="md" padding="lg">
                     <Card.Section>
                       <Image
-                        src={`https://placehold.co/600x320/e7f5ff/1c7ed6?text=${encodeURIComponent(i.title)}`}
+                        src={`https://placehold.co/600x320/e7f5ff/1c7ed6?text=${encodeURIComponent(i.en)}`}
                         h={160}
                         alt={i.title}
                       />
